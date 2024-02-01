@@ -37,7 +37,7 @@ body {
     .operation {
       display: grid;
       grid-template-columns: repeat(4, 91px);
-      grid-auto-rows: minmax(75px, auto);
+      grid-auto-rows: 70px;
       margin-top: 10px;
       text-align: center;
       gap: 4px;
@@ -63,16 +63,8 @@ body {
   grid-column-end: 5;
 }
 @media only screen and (max-width: 600px) {
-  .calc {
-    width: 100%;
-  }
-
-  .header {
-    width: 100%;
-  }
   .operation {
     display: grid;
-    grid-template-columns: repeat(4, 50px);
-    grid-auto-rows: minmax(30px, auto);
+    grid-template-columns: repeat(4, 80px) !important;
   }
 }
