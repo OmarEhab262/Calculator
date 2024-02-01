@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/main.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="calc">
+        <div class="header">
+          <div class="num"><h1>0</h1></div>
+          <div class="result"><h1>0</h1></div>
+        </div>
+        <div class="operation">
+          <div class="oper btn" onclick="clearrr()">C</div>
+          <div class="oper btn" onclick="addOperation(this)">%</div>
+          <div class="oper btn" onclick="removeLast()">X</div>
+          <div class="oper btn" onclick="addOperation(this)">/</div>
+          <div class="num btn" onclick="addNum(this)">7</div>
+          <div class="num btn" onclick="addNum(this)">8</div>
+          <div class="num btn" onclick="addNum(this)">9</div>
+          <div class="oper btn" onclick="addOperation(this)">*</div>
+          <div class="num btn" onclick="addNum(this)">4</div>
+          <div class="num btn" onclick="addNum(this)">5</div>
+          <div class="num btn" onclick="addNum(this)">6</div>
+          <div class="oper btn" onclick="addOperation(this)">-</div>
+          <div class="num btn" onclick="addNum(this)">1</div>
+          <div class="num btn" onclick="addNum(this)">2</div>
+          <div class="num btn" onclick="addNum(this)">3</div>
+          <div class="oper btn" onclick="addOperation(this)">+</div>
+          <div class="num btn" onclick="addNum(this)">0</div>
+          <div class="num btn" onclick="addNum(this)">.</div>
+          <div class="oper btn equal" onclick="equal()">=</div>
+        </div>
+      </div>
+    </div>
+    <audio id="clickSound" src="vioce/click.mp4"></audio>
+
+    <script src="script.js"></script>
+  </body>
+</html>
